@@ -27,6 +27,7 @@ While the API has been developed, the following considerations were taken:
 In order to complete the exercise withing a reasonable amount of time, some tasks were left undone. With more time these are some of the tasks we should achieve:
 * An obvious improvement is around the cache. The one in use is so simple that its really just for demonstration purposes.
   * To go live, we would need to improve its availability, freshness, accessibility (private/shared) and all other know topics around caching
+* If the API is intended to be used by large prices, then the aritmetic operation needs to be used in a checked context to eliminate result truncation
 * Secure the API by using Oauth2. This would include integrating an Identity Manager as well.
 * Replace the static configuration with the dynamic per environment configuration.
 * Add a logger to the application for at least non-successful responses. At the moment only the client has the details as to why the API response is not successful.
